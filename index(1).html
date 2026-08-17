@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3-Month Fertility Reset Program</title>
+<meta name="description" content="Helping women conceive naturally with structured lifestyle guidance for PCOS, low AMH and irregular periods.">
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:#f5f5f5;
+  color:#111;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:14px;
+}
+.page{
+  width:100%;
+  max-width:820px;
+  margin:0 auto;
+  background:#fff;
+  min-height:100vh;
+}
+.section{
+  padding:20px 28px;
+}
+.center{text-align:center}
+.topline{
+  color:#111;
+  font-size:12px;
+  font-weight:bold;
+  margin-bottom:2px;
+  text-decoration:underline;
+}
+h1{
+  margin:0 auto 8px;
+  max-width:650px;
+  font-size:31px;
+  line-height:1.08;
+  font-weight:800;
+}
+.subheadline{
+  font-size:11px;
+  font-weight:bold;
+  margin-bottom:18px;
+}
+.video{
+  width:min(100%,680px);
+  margin:0 auto;
+  aspect-ratio:16/9;
+  border-radius:7px;
+  overflow:hidden;
+  background:linear-gradient(135deg,#087e59,#27c48b);
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 2px 8px rgba(0,0,0,.12);
+}
+.video .play{
+  width:72px;
+  height:72px;
+  border-radius:50%;
+  background:#fff;
+  display:grid;
+  place-items:center;
+  color:#12a66d;
+  font-size:29px;
+  padding-left:4px;
+}
+.video .label{
+  position:absolute;
+  bottom:15px;
+  left:0;
+  right:0;
+  color:white;
+  text-align:center;
+  font-weight:bold;
+  font-size:16px;
+}
+.video-note{
+  max-width:680px;
+  margin:8px auto 0;
+  font-size:9px;
+  line-height:1.35;
+  color:#d22;
+}
+.darkbar{
+  display:inline-block;
+  background:#555b60;
+  color:white;
+  padding:7px 17px;
+  font-size:17px;
+  font-weight:800;
+  line-height:1.05;
+  margin:0 auto 10px;
+}
+.offer{
+  background:#fafafa;
+  padding-top:8px;
+  padding-bottom:22px;
+}
+.offer ul{
+  max-width:540px;
+  margin:10px auto 14px;
+  padding-left:23px;
+  line-height:1.6;
+}
+.offer li{margin-bottom:3px}
+.price{
+  font-family:Georgia,serif;
+  color:#d90000;
+  font-weight:bold;
+  font-size:22px;
+  margin-top:17px;
+}
+.payment{
+  color:#222;
+  font-family:Georgia,serif;
+  font-size:9px;
+}
+.cta{
+  display:inline-block;
+  background:#f33c73;
+  color:white;
+  font-weight:bold;
+  padding:10px 15px;
+  margin:12px auto 4px;
+  border-radius:2px;
+  font-size:12px;
+  box-shadow:0 2px 0 rgba(0,0,0,.1);
+}
+.cta-sub{
+  display:block;
+  font-family:Georgia,serif;
+  font-size:11px;
+  font-weight:bold;
+  text-decoration:underline;
+  color:#111;
+}
+.story{
+  background:#f7f7f7;
+  padding-top:14px;
+  padding-bottom:25px;
+}
+.story-inner{
+  max-width:590px;
+  margin:auto;
+  font-size:10px;
+  line-height:1.55;
+}
+.story-inner p{margin:0 0 10px}
+.story-inner ul{
+  margin:7px 0 12px;
+  padding-left:17px;
+}
+.story-inner li{margin:4px 0}
+.highlight{
+  font-weight:bold;
+  color:#07985d;
+}
+.quote{
+  background:#e9fff5;
+  border-left:4px solid #10b36e;
+  padding:12px 14px;
+  margin:14px 0;
+  font-size:11px;
+}
+.strategies{
+  padding-top:22px;
+  padding-bottom:22px;
+}
+.strategy{
+  max-width:610px;
+  margin:12px auto;
+  border:1px solid #d9d9d9;
+  border-radius:8px;
+  padding:14px 16px;
+  background:#fff;
+  text-align:left;
+}
+.strategy h3{
+  margin:0 0 5px;
+  color:#078f57;
+  font-size:15px;
+}
+.strategy p{
+  margin:0;
+  font-size:11px;
+  line-height:1.5;
+}
+.result{
+  background:#f7f7f7;
+  padding-top:22px;
+  padding-bottom:25px;
+}
+.result-box{
+  max-width:610px;
+  margin:auto;
+  text-align:center;
+}
+.result-number{
+  font-family:Georgia,serif;
+  color:#d90000;
+  font-size:29px;
+  font-weight:bold;
+}
+.result p{
+  font-size:11px;
+  line-height:1.55;
+}
+.disclaimer{
+  color:#777;
+  font-size:9px!important;
+}
+.final{
+  padding:25px 28px 35px;
+  text-align:center;
+}
+.final h2{
+  font-size:24px;
+  line-height:1.15;
+  margin:0 0 8px;
+}
+.final p{
+  max-width:600px;
+  margin:0 auto 15px;
+  font-size:12px;
+  line-height:1.5;
+}
+.whatsapp{
+  display:inline-block;
+  background:#20b966;
+  color:#fff;
+  font-weight:800;
+  padding:13px 23px;
+  border-radius:5px;
+  font-size:13px;
+}
+.footer{
+  background:#222;
+  color:#ddd;
+  text-align:center;
+  padding:16px;
+  font-size:9px;
+  line-height:1.5;
+}
+@media(max-width:560px){
+  body{font-size:13px}
+  .section{padding-left:18px;padding-right:18px}
+  h1{font-size:27px}
+  .darkbar{font-size:15px}
+  .video .label{font-size:13px}
+}
+</style>
+</head>
+
+<body>
+<div class="page">
+
+<section class="section center">
+  <div class="topline">Fertility Reset Program</div>
+  <h1>Helping Women Conceive Naturally 🤰🏻</h1>
+  <div class="subheadline">PCOS • Low AMH • Irregular Periods • 5000+ Women Guided 🌏</div>
+
+  <div class="video" aria-label="Fertility Reset introductory video placeholder">
+    <div class="play">▶</div>
+    <div class="label">3-Month Fertility Reset Program</div>
+  </div>
+  <div class="video-note">
+    Replace this area with your VSL / introduction video. Keep the video focused on the woman's fertility journey, the problem, your approach and the next step.
+  </div>
+</section>
+
+<section class="offer section center">
+  <div class="darkbar">This Fertility Program Is Designed For<br>Women Ready For A Structured Approach</div>
+
+  <ul style="text-align:left">
+    <li><b>Personalized lifestyle guidance</b> for fertility-supportive habits.</li>
+    <li>Support for women dealing with <b>PCOS, low AMH and irregular periods.</b></li>
+    <li>Practical guidance around <b>nutrition, yoga, stress and daily routines.</b></li>
+    <li>Structured support across a <b>3-month fertility reset journey.</b></li>
+  </ul>
+
+  <div class="price">Join the 3-Month Fertility Reset Program</div>
+  <div class="payment">Message us for program details and enrollment.</div>
+
+  <a class="cta" href="https://wa.me/916369606516?text=Hi%2C%20I%27m%20interested%20in%20the%203-Month%20Fertility%20Reset%20Program." target="_blank">
+    Click Here To Start Your Fertility Journey →
+  </a>
+  <span class="cta-sub">Helping women move from confusion to a structured fertility-support plan</span>
+</section>
+
+<section class="story section">
+  <div class="story-inner">
+    <p>
+      <b>Struggling with irregular periods and poor egg growth?</b>
+    </p>
+    <p>
+      Feeling frustrated with negative pregnancy tests month after month?
+      You are not alone.
+    </p>
+    <p>
+      One of our clients faced the same challenges after <b>two years of marriage</b>,
+      feeling hopeless and disappointed. Instead of trying random fertility tips,
+      we focused on three key lifestyle areas:
+    </p>
+
+    <ul>
+      <li><b>Fertility-supportive nutrition</b> 🍏</li>
+      <li><b>Stress-reducing yoga and movement</b> 🧘‍♀️</li>
+      <li><b>Healthy hormone-supporting lifestyle habits</b> 🌿</li>
+    </ul>
+
+    <p>
+      The goal was simple: create a consistent routine that supported her overall
+      health while she continued appropriate medical care.
+    </p>
+
+    <div class="quote">
+      <b>“You don't need another random fertility tip. You need a clear plan you can actually follow.”</b>
+    </div>
+
+    <p>
+      If you have been jumping between diets, exercises, supplements and social-media
+      advice, this program gives you a more structured place to start.
+    </p>
+  </div>
+</section>
+
+<section class="strategies section center">
+  <div class="darkbar">The 3 Powerful Strategies</div>
+
+  <div class="strategy">
+    <h3>01 — Fertility-Boosting Diet 🍏</h3>
+    <p>
+      Build practical food habits that support overall nutrition and a healthy lifestyle,
+      instead of following extreme or confusing diet rules.
+    </p>
+  </div>
+
+  <div class="strategy">
+    <h3>02 — Stress-Reducing Yoga 🧘‍♀️</h3>
+    <p>
+      Use gentle movement, breathing and relaxation practices as part of a balanced
+      routine designed to support wellbeing.
+    </p>
+  </div>
+
+  <div class="strategy">
+    <h3>03 — Natural Hormone-Supporting Habits 🌿</h3>
+    <p>
+      Work on sleep, movement, nutrition and stress-management habits that can be
+      maintained consistently over time.
+    </p>
+  </div>
+</section>
+
+<section class="result section">
+  <div class="result-box">
+    <div class="darkbar">A Client Story</div>
+    <div class="result-number">45 Days 🎉</div>
+    <p>
+      One client reported conceiving after following the lifestyle-focused approach
+      for 45 days.
+    </p>
+    <p>
+      Her journey involved consistent nutrition, stress-management practices and
+      healthy daily routines.
+    </p>
+    <p class="disclaimer">
+      Individual outcomes vary. This client experience is not a guarantee of pregnancy.
+      Fertility depends on many medical, biological and personal factors.
+    </p>
+  </div>
+</section>
+
+<section class="section center" style="background:#fff">
+  <div class="darkbar">Is This Program For You?</div>
+  <div class="story-inner" style="text-align:left">
+    <ul>
+      <li>You have <b>irregular periods</b> and want a structured lifestyle approach.</li>
+      <li>You have been told you have <b>PCOS or low AMH</b> and want additional lifestyle support.</li>
+      <li>You feel overwhelmed by conflicting fertility advice online.</li>
+      <li>You want a <b>3-month plan</b> instead of trying random tips every week.</li>
+      <li>You are ready to build consistent habits while staying connected with your doctor.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="final">
+  <h2>Ready To Take The Next Step? 💚</h2>
+  <p>
+    If you're ready to embrace a structured, lifestyle-focused approach to your
+    fertility journey, message us on WhatsApp.
+  </p>
+  <a class="whatsapp" href="https://wa.me/916369606516?text=Hi%2C%20I%27m%20ready%20to%20know%20more%20about%20the%203-Month%20Fertility%20Reset%20Program." target="_blank">
+    💬 WhatsApp: +91 6369606516
+  </a>
+  <p class="disclaimer" style="margin-top:13px">
+    This program provides lifestyle support and does not replace medical diagnosis,
+    fertility treatment or advice from a qualified healthcare professional.
+  </p>
+</section>
+
+<footer class="footer">
+  3-Month Fertility Reset Program · +91 6369606516<br>
+  Helping women build healthier, sustainable fertility-supportive habits.
+</footer>
+
+</div>
+</body>
+</html>
